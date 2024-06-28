@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  tgbot:
+    container_name: tgbot
+    image: ghcr.io/sunafterrainwm/telegram-search-bot-go:latest
+    restart: always
+    volumes:
+      - ./:/app/config
